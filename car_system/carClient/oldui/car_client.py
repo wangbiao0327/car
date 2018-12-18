@@ -392,7 +392,5 @@ class carClient(object):
                 # 图形界面加载后，ｅｌｓｅ字句删除
                 print("命令行不准确")
 
-# if __name__ == "__main__":
-#     client = carClient()
-#     client.main()
+
 

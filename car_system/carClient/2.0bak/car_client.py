@@ -159,37 +159,7 @@ class carClient(object):
         else:
             return "您输入的邮箱和注册邮箱不一致，请检查后再输入"
 
-        # if auth_code:
-        #     input_auth_code = input("请输入邮箱验证码")
-        #     if input_auth_code == auth_code:
-        #         new_password = input("请输入新的密码")
-        #         aff_new = input("请再次输入密码")
-        #         if new_password != aff_new:
-        #             print('前后密码不一致')
-        #         # 判断密码是否符合要求
-        #         if not self.mes.user_passwd_con(new_password):
-        #             print("密码必须为６－１０数字和字母")
-        #         #这个choise模拟确认密码和取消按钮
-        #         choise = input("确认修改(输入(aff))or取消(输入(quit))")
-        #         if choise == 'aff' and new_password == aff_new and \
-        #         self.mes.user_passwd_con(new_password):
-        #             new_password = self.mes.encrypt(new_password)
-        #             data = "change_password  %s  %s" % (account,new_password)
-        #             self.sockfd.send(data.encode())
-        #             aff = self.sockfd.recv(1024).decode()
-        #             if aff:
-        #                 print("修改成功")
-        #                 return new_password
-        #             else:
-        #                 self.change_password(self,account,is_forget=False)
-        # else:
-        #     print("没有收到验证码？点击再次获取")
-        #     return "没有收到验证码？点击再次获取"
-            # 这个choise模拟确认再次获取验证码
-            # choise = input("点击(输入(intp))")
-            # if choise == "intp":
-            #     self.change_password(account)
-            #     return False
+        return False
         
     def interface(self,account,pid):
         """
@@ -398,7 +368,4 @@ class carClient(object):
                 # 图形界面加载后，ｅｌｓｅ字句删除
                 print("命令行不准确")
 
-# if __name__ == "__main__":
-#     client = carClient()
-#     client.main()
 

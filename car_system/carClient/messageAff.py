@@ -70,102 +70,6 @@ class user_message(object):
         else:
             return [False,'请输入合法车牌号']
 
-    # def gain_message(self, L):
-    #     name = L[0]
-    #     if not self.user_name_con(name):
-    #         return [False,"请输入正确的中文名，不能包含英文字母，如：张三"]
-    #     password = L[1]
-    #     if not self.user_passwd_con(password):
-    #         return  [False,"密码不符合要求,必须为6-10字母和数字结合"]
-    #
-    #     phone = L[3]
-    #     if not self.user_phon_con(phone):
-    #        return [False,"请输入合法的手机号码"]
-    #
-    #     car_name= L[4]
-    #
-    #     car_class = L[5]
-    #
-    #     car_color = L[6]
-    #
-    #     plate_number = L[7]
-    #     if not self.user_plate_con(plate_number):
-    #         return [False,"请输入合法车牌号"]
-    #
-    #     email = L[8]
-    #     if not self.user_email_con(email):
-    #         return [False,"请输入合法的邮箱"]
-    #
-    #     verification_code = L[9]
-    #     if self.auth_code != verification_code:
-    #         return [False,"验证码不正确"]
-    #
-    #
-    #     if self.user_name_con(name) and self.user_phon_con(phone) and \
-    #     self.user_passwd_con(password) and self.user_plate_con(plate_number):
-    #         return [True, name, phone,email, password,\
-    #          plate_number, car_name, car_class, car_color]
-    #     else:
-    #         return [False,"信息错误"]
-    #         return [False, name, phone,email, password,\
-    #          plate_number, car_name, car_class, car_color]
-
-    # def change_user_msg(self,user,phon,email,plat,car,carClass,color):
-    #     '''此类方法用于修改用户信息
-    #
-    #     当用户不输入内容时，信息为原有信息，所有打印均为用户输入错误时的信息提示
-    #     '''
-    #     name = user
-    #     if name == '':
-    #         name = user
-    #     elif not self.user_name_con(name):
-    #         return [False,"用户名不合法"]
-    #     phone = phon
-    #     if phone == '':
-    #         phone = phon
-    #     elif not self.user_phon_con(phone):
-    #         return [False,"电话号码有误，请重新输入"]
-    #
-    #     uemail = email
-    #     if uemail == '':
-    #         uemail = email
-    #     elif not self.user_email_con(uemail):
-    #         return [False,"请输入合法邮箱"]
-    #
-    #     car_name = car
-    #     if car_name == '':
-    #         car_name = car
-    #
-    #     car_class = carClass
-    #     if car_class == '':
-    #         car_class = carClass
-    #
-    #     car_color = color
-    #     if car_color == '':
-    #         car_color = color
-    #
-    #     plate_number = plat
-    #     if plate_number == '':
-    #         plate_number = plat
-    #     elif not self.user_plate_con(plate_number):
-    #         return [False,"请输入合法车牌号"]
-    #
-    #     if self.user_name_con(name) and self.user_phon_con(phone) and\
-    #     self.user_email_con(uemail) and self.user_plate_con(plate_number):
-    #         user_list = [True,name,phone,uemail,plate_number,car_name,car_class,car_color]
-    #         # 此处if条件下的语句快是否是从car_client处粘贴过来的？
-    #         data_list = ["change",user]#account不知哪里来的,此处account为传入参数，现修改为ｕｓｅｒｎａｍｅ
-    #         data_list = data_list + user_list[1:]
-    #         data = '  '.join(data_list)
-    #         self.sockfd.send(data.encode())
-    #         data = self.sockfd.recv(1024).decode()
-    #         if data == 'ok':
-    #             print("信息修改成功")
-    #             return "信息修改成功"
-    #         else:
-    #             print('信息修改失败')
-    #             return "信息修改失败"
-
     def encrypt(self,password):
         s = hashlib.sha1()
         s.update(password.encode('utf-8'))
@@ -175,8 +79,8 @@ class user_message(object):
         import smtplib,time,random
         from email.mime.text import MIMEText
         from email.utils import formataddr
-        my_sender = '1097943765@qq.com'    # 发件人邮箱账号
-        my_pass = 'zxnamzlysgdrhccj'       # 此处为授权密码，现用'xxxxxxx'代替
+        my_sender = '109794****@qq.com'    # 发件人邮箱账号
+        my_pass = 'xxxxxxxxxxxx'       # 此处为授权密码，现用'xxxxxxx'代替
         my_user = my_email      # 收件人邮箱账号，我这边发送给自己
         auth_code_head = '这是我的验证码，一般人我都不告诉他：'
         self.auth_code = ''

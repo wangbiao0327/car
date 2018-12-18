@@ -76,24 +76,6 @@ class user_message(object):
 
         返回用户的信息列表,此处打印均为用户将信息输入错误时的文本提示
         '''
-        # name = input("请输入用户名")
-        # if not self.user_name_con(name):
-        #     print("请输入正确的中文名，不能包含英文字母，如：张三")
-        # phone = input("请输入有效的手机号,手机号将成为登录的唯一凭证")
-        # if not self.user_phon_con(phone):
-        #    print("请输入合法的手机号码")
-        # email = input("请输入邮箱，邮箱将作为密码丢失时验证")
-        # if not self.user_email_con(email):
-        #     print("请输入合法的邮箱")
-        # password = input("请输入6-10位数字、字母")
-        # if not self.user_passwd_con(password):
-        #     print("密码不符合要求,必须为6-10字母和数字结合")
-        # plate_number = input("请输入车牌号")
-        # if not self.user_plate_con(plate_number):
-        #     print("请输入合法车牌号")
-        # car_name = input("请输入汽车名称")
-        # car_class = input("请输入汽车类型")
-        # car_color = input("请输入汽车颜色")
 
         name = L[0]
         if not self.user_name_con(name):
