@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>car_picture/car1_51619.jpg</file>
+        <file>car_picture/car2_ub816.jpg</file>
+        <file>car_picture/car3_th859.jpg</file>
+        <file>car_picture/car4_87271.jpg</file>
+        <file>car_picture/car5_d9016.jpg</file>
+        <file>car_picture/car6_66666.jpg</file>
+        <file>car_picture/car7_a266g.jpg</file>
+        <file>car_picture/car8_521mz.jpg</file>
+        <file>car_picture/car9_a662f.jpg</file>
+        <file>car_picture/car10_d77972.jpg</file>
+    </qresource>
+</RCC>

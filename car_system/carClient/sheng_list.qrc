@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>sheng.txt</file>
+        <file>city.txt</file>
+    </qresource>
+</RCC>

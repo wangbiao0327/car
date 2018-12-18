@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>picture/back.jpg</file>
+        <file>picture/back1.jpg</file>
+        <file>picture/car_back.jpg</file>
+        <file>picture/car_laoye.jpg</file>
+        <file>picture/light.jpg</file>
+        <file>picture/qiche1.jpg</file>
+        <file>picture/qiche11.jpg</file>
+        <file>picture/water_ye.jpg</file>
+        <file>picture/water_zhu.jpg</file>
+        <file>picture/water_zhu_heibai.jpg</file>
+        <file>picture/yeah.jpg</file>
+        <file>picture/default-image.jpg</file>
+    </qresource>
+</RCC>

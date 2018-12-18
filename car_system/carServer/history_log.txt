@@ -1,0 +1,2 @@
+time.struct_time(tm_year=2018, tm_mon=11, tm_mday=25, tm_hour=19, tm_min=45, tm_sec=20, tm_wday=6, tm_yday=329, tm_isdst=0)
+ 车牌号          停车时间             离开时间     

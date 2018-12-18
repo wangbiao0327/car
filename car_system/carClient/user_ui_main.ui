@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>User_UI</class>
+ <widget class="QMainWindow" name="User_UI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>690</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>爱停车</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+
+background-image:
+	 url(:/new/prefix1/picture/back.jpg)
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget
+{
+
+background-image:
+	 url(:/new/prefix1/picture/back.jpg)
+}</string>
+   </property>
+   <widget class="QLabel" name="user_name_label">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>20</y>
+      <width>100</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>宋体</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+background:rgba(0,0,0,0)
+}</string>
+    </property>
+    <property name="text">
+     <string>用户名</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="account_name_label">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>20</y>
+      <width>180</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>宋体</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+background:rgba(0,0,0,0)
+}</string>
+    </property>
+    <property name="text">
+     <string>17688893888</string>
+    </property>
+   </widget>
+   <widget class="QCalendarWidget" name="calendar_widget">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>210</y>
+      <width>450</width>
+      <height>350</height>
+     </rect>
+    </property>
+    <property name="selectedDate">
+     <date>
+      <year>2018</year>
+      <month>10</month>
+      <day>31</day>
+     </date>
+    </property>
+    <property name="minimumDate">
+     <date>
+      <year>1753</year>
+      <month>9</month>
+      <day>14</day>
+     </date>
+    </property>
+    <property name="gridVisible">
+     <bool>true</bool>
+    </property>
+    <property name="horizontalHeaderFormat">
+     <enum>QCalendarWidget::LongDayNames</enum>
+    </property>
+    <property name="verticalHeaderFormat">
+     <enum>QCalendarWidget::NoVerticalHeader</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="personal_information_btn">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>150</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>宋体</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>查看个人资料</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+background-color:rgb(166,166,166);
+color:white;
+border:1px solid rgb(168,168,168);
+background:rgba(0,0,0,0);
+}
+
+QPushButton:hover
+{
+background-color:rgba(239,239,239,1);
+color:back;
+background:rgba(166,166,166,1);
+}</string>
+    </property>
+    <property name="text">
+     <string>个人资料</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stop_car_history_btn">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>180</y>
+      <width>150</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>宋体</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>查看历史停车记录</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+background-color:rgb(166,166,166);
+color:white;
+border:1px solid rgb(168,168,168);
+background:rgba(0,0,0,0);
+}
+
+QPushButton:hover
+{
+background-color:rgba(239,239,239,1);
+color:back;
+background:rgba(166,166,166,1);
+}</string>
+    </property>
+    <property name="text">
+     <string>停车记录</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="modify_username_btn">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>320</y>
+      <width>150</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>宋体</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>修改用户名</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+background-color:rgb(166,166,166);
+color:white;
+border:1px solid rgb(168,168,168);
+background:rgba(0,0,0,0);
+}
+
+QPushButton:hover
+{
+background-color:rgba(239,239,239,1);
+color:back;
+background:rgba(166,166,166,1);
+}</string>
+    </property>
+    <property name="text">
+     <string>修改用户名</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="modify_password_btn">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>460</y>
+      <width>150</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>宋体</family>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>修改登录密码</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton
+{
+background-color:rgb(166,166,166);
+color:white;
+border:1px solid rgb(168,168,168);
+background:rgba(0,0,0,0);
+}
+
+QPushButton:hover
+{
+background-color:rgba(239,239,239,1);
+color:back;
+background:rgba(166,166,166,1);
+}</string>
+    </property>
+    <property name="text">
+     <string>修改密码</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="today_weather_label">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>100</y>
+      <width>300</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>宋体</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+background:rgba(0,0,0,0)
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#00aaff;&quot;&gt;今日天气&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="today_weather_name_label">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>100</y>
+      <width>121</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>宋体</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel
+{
+background:rgba(0,0,0,0)
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; color:#00aaff;&quot;&gt;今日天气&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>690</width>
+     <height>18</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="background.qrc"/>
+ </resources>
+ <connections/>
+</ui>
