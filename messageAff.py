@@ -175,8 +175,8 @@ class user_message(object):
         import smtplib,time,random
         from email.mime.text import MIMEText
         from email.utils import formataddr
-        my_sender = '1097943765@qq.com'    # 发件人邮箱账号
-        my_pass = 'zxnamzlysgdrhccj'       # 此处为授权密码，现用'xxxxxxx'代替
+        my_sender = '10*******@qq.com'    # 发件人邮箱账号
+        my_pass = '*********'       # 此处为授权密码，现用'xxxxxxx'代替
         my_user = my_email      # 收件人邮箱账号，我这边发送给自己
         auth_code_head = '这是我的验证码，一般人我都不告诉他：'
         self.auth_code = ''

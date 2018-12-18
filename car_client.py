@@ -229,14 +229,3 @@ class carClient(object):
 
 if __name__ == "__main__":
     client = carClient()
-    # [username, password, phone_number, car_factory, car_model, car_color, car_plate, email]
-    # print(client.Register("杨军军","123456","15767517285","奥迪","A8","黑色","粤B.66666","2089850364@qq.com"))
-    # print(client.Login("杨军军","654321"))
-    # print(client.Get_email_verify_code("杨军军","2089850364@qq.com"))
-    # print(client.Modify_password("杨军军","654321"))
-    # print(client.Modify_username("楊軍軍","楊軍軍"))
-    # print(client.Personal_information_display("楊軍軍"))
-    # print(client.Select_history_recording("楊軍軍"))
-    # print(client.Personal_information_edit("楊軍軍",'13788888888'))
-    # print(client.Select_weath_message("深圳市"))
-    print(client.User_quit("楊軍軍"))
